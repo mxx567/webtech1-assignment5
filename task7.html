@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .task-navigation { display: flex; justify-content: center; gap: 12px; margin: 24px 0; }
+        .task-navigation button { padding: 10px 18px; cursor: pointer; }
+        .task-navigation button:disabled { cursor: not-allowed; opacity: 0.5; }
+    </style>
 </head>
 <body>
+    <nav class="task-navigation" aria-label="Task navigation">
+        <button type="button" onclick="location.href='task6.html'">Prev Task</button>
+        <button type="button" onclick="location.href='task8.html'">Next Task</button>
+    </nav>
     <h1>Calculator</h1>
     <input id="num1" type="number">
     <input id="num2" type="number">
